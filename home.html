@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React Facilito</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+    ></script>
+    <link rel="stylesheet" href="stylehome.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" src="script.js"></script>
+    <script type="text/babel">
+      const App = () => (
+        <div>
+          <Navigation />
+          <div id="section2" class="section">
+            <h2>Motos a la Venta</h2>
+            <ul>
+              <li>
+                <strong>Moto 1:</strong> Esto es un BMW K 1600 Grand América. es
+                una de las motocicletas touring más lujosas y avanzadas de la
+                marca alemana. Diseñada para quienes buscan un viaje cómodo y
+                lleno de tecnología sus características destacadas:
+                Características Principales: 1. Motor y Rendimiento: Tipo de
+                Motor: 6 cilindros en línea, 4 tiempos, refrigerado por líquido.
+                Cilindrada: 1,649 cc. Potencia Máxima: Aproximadamente 160 hp
+                (118 kW) a 7,750 rpm. Par Motor: Alrededor de 175 Nm a 5,250
+                rpm. Transmisión: 6 velocidades con cambio electrónico y sistema
+                de asistencia al arranque. su costo es de 34,992.15 Dólar
+                estadounidense
+              </li>
+              <li></li>
+            </ul>
+            <img
+              src="https://mediapool.bmwgroup.com/cache/P9/201710/P90281180/P90281180-k-1600-grand-america-11-2017-599px.jpg"
+              alt="MotoPrime"
+            />
+            <button class="btn" onclick="nextSection(3)">
+              Siguiente
+            </button>
+          </div>
+        </div>
+      );
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+     
+  </body>
+</html>

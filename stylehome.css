@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("imagenes/motoprime.html.jpg");
+}
+nav {
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 150px;
+}
+nav {
+  padding: 0.5rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+#section2 {
+  place-items: center;
+  background-color: #ccc;
+  width: 800px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 2px 0 0 730px;
+}
+h2 {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+p {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+  width: 750px;
+  margin-bottom: 20px;
+}
+.btn {
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+.motorprime {
+  border-radius: 10px;
+  background-color: #ccc;
+}
