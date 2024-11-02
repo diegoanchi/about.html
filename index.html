@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>welcome</title>
+    <title>Welcome</title>
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -16,32 +16,24 @@
       crossorigin
       src="https://unpkg.com/@babel/standalone/babel.min.js"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/babel" src="script.js"></script>
+  <body class="min-h-screen flex flex-col">
+    <div id="root" class="flex-grow"></div>
+    <script type="text/babel" src="component.common.js"></script>
     <script type="text/babel">
       const App = () => (
-        <div>
+        <div className="flex flex-col min-h-screen">
           <Navigation />
-          <div id="section1" class="section active">
-            <h1>Bienvenidos a MotoPrime</h1>
-            <p>
-              ¡Nos alegra verte en el lugar donde la pasión por las dos ruedas
-              se convierte en una verdadera aventura! Aquí encontrarás todo lo
-              que necesitas para disfrutar al máximo de tu moto
-            </p>
-            <button class="btn" onclick="nextSection(2)">
-              <a href="home.html">Siguiente</a>
-            </button>
-          </div>
+          <Welcome />
+          <div className="flex-grow"></div>
+          <Footer />
         </div>
       );
 
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(<App />);
     </script>
-     
   </body>
 </html>
