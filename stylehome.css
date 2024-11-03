@@ -13,7 +13,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: src = "motoprime.html.jpg";
+  background-image: url("imagenes/motoprime.html.jpg");
 }
 nav {
   background-color: #007bff;
@@ -69,5 +69,5 @@ p {
 }
 .motorprime {
   border-radius: 10px;
-  background-color: #ccc;
+  background-color: #2e2828;
 }
